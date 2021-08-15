@@ -1,0 +1,41 @@
+header {
+    background-color: var(--amarillo);
+    width: 100%;
+    padding: 20 px;
+}
+
+header .logo {
+    width: 150px;
+    padding: 15px; 
+}
+
+header p {
+    text-align: center;
+    padding: 10px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    font-size: 20px;
+    text-align: center;
+    
+   
+}
+
+div.burger-menu i {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    border-width: 15px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+

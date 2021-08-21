@@ -1,0 +1,27 @@
+footer {
+    color: var(--gris-oscuro);
+    margin-top: 15px;
+}
+
+footer section.texto{
+    margin-bottom: 10px;    
+    text-align: center;
+}
+
+footer i {
+    color: var(--celeste);
+    font-size: 2em;
+    margin: 0px;
+}
+
+footer h4 {
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    font-size: 16px;
+}

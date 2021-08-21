@@ -2,26 +2,78 @@
     font-size: 24px;
 }
 
-.ofertas h2 {
+main .ofertas h2 {
     font-size: 24px;
     margin: 5px;
 }
 
-.producto p {
-    font-size: 16px;
+main .producto p {
+    font-size: 14px;
     margin: 5px;
+    color: var(--verde);
 }
 
-.producto span {
+main .fas {
+    color: var(--verde);
+    padding: 10px;
+    border: solid 1px var(--verde);
+    border-radius: 50px;
+}
+main .producto span {
     font-size: 18px;
     margin: 5px;
 }
 
-.producto h4 {
+main .producto h4 {
     font-size: 16px;
-    margin: 5px;
+    padding: 10px 5px;
+    display: none;
+}
+
+main .producto {
+    margin-top: 10px;
+    background-color: white;
 }
 
 .ultimaVisita {
     margin-bottom: 25px;
+}
+
+main {
+    margin-top: 20px;   
+    width: 90%;
+    margin-left: 5%;
+}
+
+form {
+    padding-left: 20px;
+}
+
+.producto div {
+    padding: 15px;
+    border-top: solid 3px var(--gris-claro);
+}
+
+/*Tablets*/
+@media (min-width: 361px) {
+    article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main .producto h4 {
+    display: block;
+}
+
+}
+
+/*PC*/
+@media (min-width: 769px) {
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main .producto h4 {
+        display: block;
+    }
+
 }

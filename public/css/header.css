@@ -2,6 +2,7 @@ header {
     background-color: var(--amarillo);
     width: 100%;
     padding: 20 px;
+    color: black;
 }
 
 header .logo {
@@ -14,7 +15,13 @@ header p {
     padding: 10px;
 }
 
+.menu {
+        padding-left: 20px;
+    margin-bottom: 20px;
+}
+
 header ul {
+
     list-style-type: none;
 }
 
@@ -39,3 +46,39 @@ div.burger-menu i {
     margin-bottom: 10px;
 }
 
+.site {
+    display: none;
+}
+
+.login {
+    display: none;
+}
+
+/*Tablets*/
+@media (min-width: 361px) {
+    div.burger-menu i {
+        display: none;
+    }
+    
+    .site {
+        display: block;
+    }
+    
+    .login {
+        display: block;
+    }
+}
+
+/*PC*/
+@media (min-width: 769px) {
+    div.burger-menu i {
+        display: none;
+    }
+    .site {
+        display: block;
+    }
+    
+    .login {
+        display: block;
+    }
+}

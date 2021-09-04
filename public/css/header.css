@@ -14,24 +14,29 @@ header {
 }
 
 .logo {
-    width: 50%;
+    width: 47%;
 }
 
 .search{
-    width: 50%;
+    width: 47%;
     display: flex;
     flex-wrap: nowrap;
+    margin-left: 10px;
 }
 
 .search input {
     width: 75%;
 }
-/* .search .lupa {
-    width: 10%;
-} */
+.search .lupa {
+    padding:5px;
+} 
 header ul {
-
+margin-top: 10px;
     list-style-type: none;
+}
+
+header p {
+    margin-top: 10px;
 }
 
 header a {
@@ -40,9 +45,10 @@ header a {
 }
 
 header nav {
-width: 90%;
+    
+width: 100%;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 header nav ul {
@@ -50,6 +56,11 @@ header nav ul {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: nowrap;
+}
+
+header nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .burger-menu {
@@ -72,11 +83,13 @@ div.burger-menu i {
     display: none;
 }
 
-.login {
+.user-menu {
     display: none;
-}
+} 
 
-/*-----------Tablet-------------*/
+/*-----------Tablet------------------------------------------------------------*/
+/*-----------Tablet------------------------------------------------------------*/
+
 @media (min-width: 361px) {
     div.burger-menu i {
         display: none;
@@ -97,7 +110,9 @@ div.burger-menu i {
 .search {
     width: 30%;
 }
-
+.search input {
+    width: 85%;
+}
 header p {
     text-align: center;
     width: 30%;
@@ -111,13 +126,13 @@ header p {
 .menu ul {
     width: 45%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+}
 }
 
+/*----------PC-------------------------------------------------------------------------------*/
+/*----------PC-------------------------------------------------------------------------------*/
 
-
-}
-/*----------PC-----------*/
 @media (min-width: 769px) {
     div.burger-menu i {
         display: none;
@@ -125,7 +140,7 @@ header p {
     .site {
         display: block;
     }
-    
+
     .login {
         display: block;
     }

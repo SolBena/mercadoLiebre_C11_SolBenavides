@@ -1,6 +1,8 @@
 footer {
     color: var(--gris-oscuro);
     margin-top: 40px;
+    background-color: white;
+    padding: 20px;
 }
 
 footer section.texto{
@@ -25,4 +27,20 @@ footer p {
 
 footer h4 {
     font-size: 16px;
+}
+
+/*PC----------------------------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+    footer .info-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .texto {
+        width: 30%;
+    }
+
+    footer i:hover {
+        color: var(--azul)
+    }
 }

@@ -1,3 +1,9 @@
+*​{ 
+    margin: 0px; 
+    padding: 0px;   
+    box-sizing: border-box; 
+} 
+
 /* main {
     position: relative;
 } */
@@ -30,34 +36,48 @@ main .producto i {
     border-radius: 50% ;
     position: absolute ;
     right: 20px ;
-    /* top: -15px; */
+/*     top: -15px; */
+}
+
+main .producto i:hover {
+    transform: rotateZ(-90deg);
+    transition-duration: 1s;
 }
 
 
 main .producto .text-container
-{  
-   
+{     
     padding: 15px;
     border-top: solid 3px var(--gris-claro);
-    display: flex;
+/*     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-start; */
 }
+
 
 main .producto .dto {
     font-size: 14px;
     color: var(--verde);
-    width: 70%;
 }
+
+main .producto .precio-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 main .producto .precio {
     font-size: 18px;
-    width: 30%;
+    padding-right: 7px;
 }
 
 main .producto h4 {
-    font-size: 16px;
     display: none;
-    margin: 5px;
+}
+
+main .producto h4:hover {   
+     font-size: 16px;
+        margin: 5px;
 }
 
 main .producto {
@@ -85,11 +105,13 @@ main {
     flex-wrap: wrap;
 }
 
-/*Tablets----------------------------------------------------------------------------------------------------*/
-@media (min-width: 361px) {
-    article {
+article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
+/*Tablets----------------------------------------------------------------------------------------------------*/
+@media (min-width: 361px) {
+
 
 .producto {
 width: 45%;
@@ -114,9 +136,7 @@ main .producto h4 {
 
 /*PC----------------------------------------------------------------------------------------------*/
 @media (min-width: 769px) {
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+
 
     main .producto h4 {
         display: block;
@@ -129,5 +149,7 @@ main .producto h4 {
     .producto {
         width: 23%;
         }
+
+        
 
 }

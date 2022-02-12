@@ -28,12 +28,18 @@ header {
 }
 
 .search input {
-    width: 75%;
+    width: 80%;
 }
 
 .search .lupa {
     padding:5px;
-} 
+    cursor:pointer;
+    align-self: rigth;
+    } 
+
+.search form {
+    width: 100%;
+}
 
 header ul {
 margin-top: 10px;
@@ -47,6 +53,10 @@ header p {
 header a {
     text-decoration: none;
     color: black;
+}
+
+header a:hover {
+    color: var(--celeste);
 }
 
 header nav {

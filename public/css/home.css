@@ -4,9 +4,9 @@
     box-sizing: border-box; 
 } 
 
-/* main {
+ main {
     position: relative;
-} */
+} 
 
 .banner {
     margin-top: 0px;
@@ -24,8 +24,8 @@ main .ofertas h2 {
 }
 
 main .producto i {
-    
-    display: block ;
+
+   display: block ;
     color: var(--verde);
     font-size: 16px ;
     padding: 5px ;
@@ -34,15 +34,16 @@ main .producto i {
     border: 1px solid var(--verde) ;
     background-color: #FFF ;
     border-radius: 50% ;
-    position: absolute ;
-    right: 20px ;
-/*     top: -15px; */
+    position: absolute;
+  right: 20px ; 
+   /*  top: -15px;  */
 }
 
-main .producto i:hover {
+main .producto:hover i {
     transform: rotateZ(-90deg);
     transition-duration: 1s;
-}
+} 
+
 
 
 main .producto .text-container
@@ -72,13 +73,31 @@ main .producto .precio {
 }
 
 main .producto h4 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+main .producto .descripcion {
     display: none;
 }
 
-main .producto h4:hover {   
-     font-size: 16px;
-        margin: 5px;
-}
+main .producto:hover p {   
+    display: block;
+    font-size: 16px;
+    margin: 5px;
+} 
+
+main .producto:hover .descripcion {
+    font-size: 16px;
+    margin: 5px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  
+  main .producto:hover i {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+  }
 
 main .producto {
     position: relative;
@@ -95,9 +114,9 @@ main {
     margin: 0 auto;
 }
 
-/* form {
+ form {
     padding-left: 20px;
-} */
+} 
 
 .product-container {
     display: flex;
@@ -149,7 +168,5 @@ main .producto h4 {
     .producto {
         width: 23%;
         }
-
         
-
 }
